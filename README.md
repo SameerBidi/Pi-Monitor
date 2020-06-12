@@ -1,6 +1,6 @@
 # Pi-Monitor
 
-Simple Hardware Monitor for you Raspberry Pi or any Linux Machine
+Simple Hardware Monitor for your Raspberry Pi or any Linux Machine
 
 Monitor: CPU/GPU temps, usage, frequencies, memory, disk
 
