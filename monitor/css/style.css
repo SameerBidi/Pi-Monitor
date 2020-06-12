@@ -1,0 +1,23 @@
+.customContainer
+{
+  padding: 20px;
+}
+
+.progress {
+  height: 150px;
+  background-color: white;
+}
+
+.progress > svg {
+  height: 100%;
+  display: block;
+}
+
+.value
+{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40;
+  text-align: center;
+}

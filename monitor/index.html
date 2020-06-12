@@ -1,0 +1,134 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="js/jquery-min.js"></script>
+
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script src="js/materialize.min.js"></script>
+
+  <script src="js/progressbar.js"></script>
+
+  <title>Pi Monitor</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper purple">
+      <a class="brand-logo center">Pi Monitor</a>
+    </div>
+  </nav>
+
+  <div class="customContainer">
+    <div class="card-panel">
+      <h6 id="model">Model</h6>
+      <h6 id="date">Date</h6>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l6 xl6 card-panel center">
+        <h5>CPU Temperature</h5>
+        <br>
+        <div class="progress" id="cpu">
+          <h6 class="value">0</h6>
+        </div>
+      </div>
+      <div class="col s12 m12 l6 xl6 card-panel center">
+        <h5>GPU Temperature</h5>
+        <br>
+        <div class="progress" id="gpu">
+          <h6 class="value center">0</h6>
+        </div>
+      </div>
+    </div>
+    <div class="row card-panel center">
+      <h5>CPU Frequency</h5>
+      <br>
+      <div class="col s12 m12 l3 xl3 card-panel center">
+        <h6>CPU0</h6>
+        <br>
+        <div class="progress" id="freq0">
+          <h6 class="value center">0</h6>
+        </div>
+      </div>
+      <div class="col s12 m12 l3 xl3 card-panel center">
+        <h6>CPU1</h6>
+        <br>
+        <div class="progress" id="freq1">
+          <h6 class="value center">0</h6>
+        </div>
+      </div>
+      <div class="col s12 m12 l3 xl3 card-panel center">
+        <h6>CPU2</h6>
+        <br>
+        <div class="progress" id="freq2">
+          <h6 class="value center">0</h6>
+        </div>
+      </div>
+      <div class="col s12 m12 l3 xl3 card-panel center">
+        <h6>CPU3</h6>
+        <br>
+        <div class="progress" id="freq3">
+          <h6 class="value center">0</h6>
+        </div>
+      </div>
+    </div>
+    <div class="row card-panel center">
+      <h5>CPU Usage</h5>
+      <br>
+      <div class="col s12 m12 l3 xl3 card-panel center">
+        <h6>CPU0</h6>
+        <br>
+        <div class="progress" id="usage0">
+          <h6 class="value center">0</h6>
+        </div>
+      </div>
+      <div class="col s12 m12 l3 xl3 card-panel center">
+        <h6>CPU1</h6>
+        <br>
+        <div class="progress" id="usage1">
+          <h6 class="value center">0</h6>
+        </div>
+      </div>
+      <div class="col s12 m12 l3 xl3 card-panel center">
+        <h6>CPU2</h6>
+        <br>
+        <div class="progress" id="usage2">
+          <h6 class="value center">0</h6>
+        </div>
+      </div>
+      <div class="col s12 m12 l3 xl3 card-panel center">
+        <h6>CPU3</h6>
+        <br>
+        <div class="progress" id="usage3">
+          <h6 class="value center">0</h6>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l6 xl6 card-panel center">
+        <h5>Memory Usage</h5>
+        <br>
+        <div class="progress" id="mem">
+          <h6 class="value center">0</h6>
+        </div>
+      </div>
+      <div class="col s12 m12 l6 xl6 card-panel center">
+        <h5>Disk Usage</h5>
+        <br>
+        <div class="progress" id="disk">
+          <h6 class="value center">0</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="js/Handler.js"></script>
+
+</html>
